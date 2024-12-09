@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Plans - URL Shortener</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="admin_dashboard.html">Shortly Admin</a>
+            <div>
+                <span class="navbar-text">Welcome, Admin</span>
+                <a href="logout.html" class="btn btn-outline-light ms-2">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="container-fluid my-5 pt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar bg-light p-3">
+                    <h4>Admin Dashboard</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="admin_dashboard.html">Dashboard</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin_manage_users.html">Manage Users</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin_manage_plans.html">Manage Plans</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin_profile.html">Profile</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin_settings.html">Settings</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <h2>Manage Plans</h2>
+                <p>Create, edit, and manage subscription plans for users.</p>
+                <!-- Plans Table -->
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Plan Name</th>
+                            <th>Price</th>
+                            <th>Features</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Free Plan</td>
+                            <td>Free</td>
+                            <td>Basic URL shortening</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pro Plan</td>
+                            <td>$10/month</td>
+                            <td>Advanced analytics, custom branding</td>
+                            <td>
+                                <button class="btn btn-warning btn-sm">Edit</button>
+                                <button class="btn btn-danger btn-sm">Delete</button>
+                            </td>
+                        </tr>
+                        <!-- Add more plans as needed -->
+                    </tbody>
+                </table>
+                <!-- Add New Plan Button -->
+                <button class="btn btn-primary mt-3">Add New Plan</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
